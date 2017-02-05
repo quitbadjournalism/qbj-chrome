@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quit Bad Journalism Options</title>
+    <style>
+      body: {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Bad sites</h3>
+    <p>These are sites which you want to block access to. You can use plain strings or formulate as a <a href="http://www.regex101.com" target="_blank">RegExp</a>.</p>
+    <div id="bad-sites"></div>
+    <button id="add-bad-site">Add bad site</button>
+
+    <div style="margin-top: 2em">
+      <h3>Soften the block</h3>
+      <div>
+        <label>
+          <input id="enable-gifs" type="checkbox" name="enableGIFs" checked />
+          Show me animated GIFs
+        </label>
+      </div>
+    </div>
+
+    <div class="footer" style="margin-top: 1em">
+      <div id="status" style="color: #999; height: 2em"></div>
+      <button id="save">Save Options</button>
+    </div>
+
+    <div id="templates" style="display:none">
+      <!-- Bad Site item -->
+      <div class="bad-site" style="margin-bottom: 0.5em">
+        <input type="text" name="badSites[]" value="" />
+        <a href="javascript:;" class="remove-bad-site">Remove</a>
+      </div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

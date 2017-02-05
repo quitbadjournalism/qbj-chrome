@@ -1,0 +1,35 @@
+{
+  "name": "Quit Bad Journalism",
+  "version": "1.0.0",
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "manifest_version": 2,
+  "description": "Blocks access to websites whose business model relies on bad, trashy or hateful journalism. Nominate more by emailing URLs to quitbadjournalism@gmail.com",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+    // Required.
+    "page": "options.html",
+    // Recommended.
+    "chrome_style": true
+    // Not recommended; only provided for backwards compatibility,
+    // and will be unsupported in a future version of Chrome (TBD).
+    // "open_in_tab": true
+  }
+}
