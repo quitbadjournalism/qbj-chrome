@@ -70,7 +70,7 @@
       '<h1>Hi there!</h1>' +
       '<h2 style="font-weight:normal"><pre><code>' + loc + '</code></pre></h2>' +
       '<h2 style="font-weight:normal">was blocked by <strong>Quit Bad Journalism</strong> &mdash; <em>You\'re welcome!</em></h2>' +
-      '<p><a href="https://github.com/quitbadjournalism/qbj-chrome" target="_blank">Why?</a></p>' +
+      '<p><a href="https://github.com/quitbadjournalism/qbj-chrome#why" target="_blank">Why?</a></p>' +
       (img || '') +
       '<marquee style="margin-top: 100px; margin-bottom: 100px"><a href=\"' + url + '\" style="display: block">Let me in &mdash; I\'m aware of the dangers to my mental health that continuing to this website will expose me to.</a></marquee>' +
       '</div>')
